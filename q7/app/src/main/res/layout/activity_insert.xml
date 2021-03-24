@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout
+    tools:context=".InsertActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:text="Name"
+        style="@style/TextStyle"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/labelName"/>
+
+    <EditText
+        style="@style/TextStyle"
+        android:id="@+id/inputName"
+        android:inputType="text"
+        android:layout_alignBottom="@id/labelName"
+        android:layout_toRightOf="@id/labelName"/>
+
+    <TextView
+        android:text="Password"
+        style="@style/TextStyle"
+        android:id="@+id/labelPrice"
+        android:layout_alignLeft="@id/labelName"
+        android:layout_below="@id/labelName"/>
+
+    <EditText
+        style="@style/TextStyle"
+        android:id="@+id/inputPrice"
+        android:inputType="text"
+        android:layout_alignBottom="@id/labelPrice"
+        android:layout_toRightOf="@id/labelPrice"/>
+
+    <Button
+        android:text="Add"
+        style="@style/TextStyle"
+        android:layout_marginTop="20dp"
+        android:id="@+id/buttonAdd"
+        android:layout_below="@id/labelPrice"
+        android:onClick="add"
+        android:backgroundTint="#996633"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="Back"
+        style="@style/TextStyle"
+        android:layout_marginTop="20dp"
+        android:id="@+id/buttonBack"
+        android:layout_below="@id/buttonAdd"
+        android:onClick="back"
+        android:backgroundTint="#996633"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
